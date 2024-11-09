@@ -91,6 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
       operand = "";
 
     } else {
+
       if(f == true){
         _output = buttonText;
         prev = buttonText;
@@ -98,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
         _output = _output + buttonText;
         prev = prev + buttonText;
       }
-
+      f=false;
     }
 
     print(_output);
